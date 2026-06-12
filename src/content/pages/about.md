@@ -1,37 +1,46 @@
 ---
-title: "About"
-description: "A bit about me and this blog."
+title: "About BadOmen & Crowley"
+description: "Learn about the BadOmen quantitative stock trading algorithm and the Crowley companion website."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Welcome to **Crowley**, the public reporting companion site for the **BadOmen** algorithmic stock trading pipeline. 
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+This platform serves as a daily execution log, dashboard, and research repository tracking our automated growth portfolio. All logs, positions, and performance metrics are updated in real-time using historical API endpoints and paper trading accounts.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+---
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## 📓 What is BadOmen?
 
-## Features
+**BadOmen** is a proprietary trend-following and momentum-breakout stock trading algorithm designed to capture upside in leading sectors while dynamically hedging during market downturns. The algorithm screens liquid, high-growth US equities and executes automated limit buy orders on pullbacks, while managing risk using a multi-tiered exit system.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+### Core Algorithmic Mechanics
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+1. **Dynamic Market Regime-Switching:** 
+   The system runs a daily check on the overall market trend (using `SPY` against its **200-day Simple Moving Average**).
+   * **Bull Regime (SPY $\ge$ 200-SMA):** Bypasses earnings deceleration filters, lowers the cash safety buffer, concentrates capital, and relaxes exits to capture high-conviction growth.
+   * **Bear Regime (SPY < 200-SMA):** Restricts buys to strict growth-acceleration metrics, enforces a defensive Cash Safety Cushion, and activates tight trendline exit checks.
+   
+2. **Beta-Adjusted Pullback Entries:**
+   Rather than using static entry metrics, BadOmen calculates historical asset volatility (Beta) to define entry pullback targets. High-Beta stocks are required to undergo deeper consolidations before entry, while stable low-Beta stocks are entered on smaller pullbacks.
 
-and so much more.
+3. **Multi-Tiered Exit Strategy:**
+   Risk is mitigated by executing partial liquidations at designated thresholds:
+   * **Tier 1 (Profit Lock):** Liquidates 1/3 of the position when the asset rises 30% to 50% above average entry cost.
+   * **Tier 2 (Growth Decay):** Liquidates 1/3 of the position if future consensus earnings growth rates decelerate significantly.
+   * **Tier 3 (Trend Break):** Exits the remaining holdings entirely if the stock price closes below its **50-day SMA** during a market-wide bear regime.
 
-## Show your support
+---
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+## 🛠️ The Tech Stack
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+The automated pipeline is built on a modular, clean python setup:
+* **Quantitative Engine:** Python, `pandas`, `numpy`, and `yfinance` for core screening calculations, regime checks, and indicator calculations.
+* **Order Execution:** Integrates directly with the **Alpaca API** for real-time asset data, active position monitoring, and paper order routing.
+* **Automated Alerting:** Dispatches order queues, exit triggers, and status updates directly to a private Slack workspace via incoming webhooks.
+* **Reporting & Publishing:** Automatically compiles execution logs into markdown posts, plots equity curves using `matplotlib`, and updates the companion **AstroPaper** blog on GitHub Pages.
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+---
 
-Kyay zuu! 🙏🏼
+## ⚠️ Disclaimer
+
+*All performance metrics, journal entries, and order sheets published on this site represent dry-run and paper-trading allocations for educational and quantitative research purposes only. Nothing on this website constitutes direct financial advice, investment recommendations, or solicitation to trade live capital.*
