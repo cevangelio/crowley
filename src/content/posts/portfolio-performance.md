@@ -1,49 +1,42 @@
 ---
-author: cevangelio
-pubDatetime: 2026-06-12T18:41:00Z
-title: BadOmen Portfolio & Backtest Performance
-slug: portfolio-performance
+title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
+pubDatetime: 2026-06-12T18:54:32.865956+08:00
+description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
 tags:
-  - backtest
-  - results
-  - regime-switching
-description: Comprehensive summary of Project BadOmen asset screening backtest performance and regime-switching strategy results.
+  - portfolio
+  - performance
+  - pnl
 ---
 
-Welcome to the official performance and backtesting report for **Project BadOmen**.
+# 📈 BadOmen Portfolio Performance & PnL Report
+Welcome to the live performance dashboard for **BadOmen**, our automated algorithmic growth portfolio. This page displays the historic PnL growth curve, account statistics, active position metrics, and recent historical exits. Updated daily via Alpaca Paper Account integrations.
 
-Project BadOmen runs automated scans on high-impact tech, hardware, and semiconductor companies to discover value-growth mismatches. During periods of market stress (Bear Regimes), the system automatically triggers a **Regime-Switching deceleration filter** to protect capital.
+## 📊 Portfolio Summary
+| Performance Metric | Value | description |
+| :--- | :--- | :--- |
+| **Net Portfolio Equity** | **$100,096.32** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🟢 **+$107.36** (+0.11%) | Total return of current open holdings |
+| **Cash Balance** | $96,670.52 | Idle reserve currency available for limit orders |
+| **Buying Power** | $383,557.70 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-06-12 18:54:32 (SGT)` | Timestamp of daily execution and sync run |
 
-Below are the detailed results of the baseline and momentum-switching backtests.
+## 📈 Net Equity Growth Curve
+The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
 
-## Backtest Configurations
+![Portfolio PnL History](/pnl_chart.png)
 
-| Strategy / Phase | Period | Starting Capital | Ending Value | Total Return |
-| :--- | :--- | :--- | :--- | :--- |
-| **Baseline Value Backtest** | Jul 08, 2020 – Jan 04, 2021 | $100,000.00 | $107,743.15 | **+7.74%** |
-| **Momentum Backtest (Regime-Switching)** | Jan 04, 2021 – Jun 30, 2023 | $100,000.00 | $107,647.06 | **+7.65%** |
+## 💼 Current Position Holdings
+| Ticker | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **AVGO** | 1 | $385.71 | $387.03 | 🟢 +$1.32 | +0.34% |
+| **ITRI** | 12 | $81.80 | $80.72 | 🔴 $-12.96 | -1.32% |
+| **NU** | 85 | $11.60 | $12.16 | 🟢 +$47.72 | +4.84% |
+| **SMCI** | 33 | $29.25 | $31.41 | 🟢 +$71.28 | +7.38% |
 
----
+## 🔴 Recent Realized Trades
+| Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **AVGO** | 1 | $385.71 | $374.70 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-11.01** (-2.85%) | 2026-06-10 |
 
-## Strategy Analysis
-
-### 1. Baseline Value Phase (2020 - 2021)
-During this period, the portfolio focused on value scanning of target tech watchlists, filtering assets by a PE/PEG floor and analyst coverage limits.
-* **Duration**: ~6 months
-* **Max Drawdown**: Minimal, steady value accretion.
-* **Key Matches**: Semiconductor and mega-cap hardware leaders.
-
-### 2. Momentum & Regime-Switching Phase (2021 - 2023)
-In the 2021-2023 period, market regimes shifted frequently between bull and bear regimes (2022 bear market). 
-* **Regime Switching**: By checking whether SPY trades above or below its 200-day Simple Moving Average (SMA), the system automatically toggled the growth deceleration check.
-* **Capital Protection**: During the 2022 selloffs, the system successfully stepped aside, raising cash levels and avoiding steep pullbacks, eventually closing the 2.5-year cycle at **$107,647.06**.
-
----
-
-## Technical Summary
-Both backtest runs prove the efficacy of applying:
-1. **Analyst Coverage Floors** (ensuring high liquidity and consensus agreements).
-2. **PEG Boundaries** (keeping valuation growth-justified).
-3. **SPY 200-SMA Regime Checks** (hedging risk dynamically).
