@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-06-17T00:00:11.450552+08:00
+pubDatetime: 2026-06-17T08:18:17.868581+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -16,11 +16,11 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 ## 📊 Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
-| **Net Portfolio Equity** | **$100,135.21** | Total current liquidation value of cash and stock holdings |
-| **Total Unrealized P&L** | 🟢 **+$145.98** (+0.15%) | Total return of current open holdings |
+| **Net Portfolio Equity** | **$100,123.69** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🟢 **+$134.74** (+0.13%) | Total return of current open holdings |
 | **Cash Balance** | $94,227.99 | Idle reserve currency available for limit orders |
-| **Buying Power** | $381,870.38 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-06-17 00:00:11 (SGT)` | Timestamp of daily execution and sync run |
+| **Buying Power** | $381,838.14 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-06-17 08:18:17 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
@@ -30,13 +30,13 @@ The chart below illustrates the historical performance of the account starting f
 ## 💼 Current Position Holdings
 | Ticker | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AVGO** | 1 | $385.71 | $379.43 | 🔴 $-6.28 | -1.63% |
-| **ITRI** | 12 | $81.80 | $81.33 | 🔴 $-5.64 | -0.57% |
-| **META** | 1 | $568.17 | $595.13 | 🟢 +$26.96 | +4.75% |
-| **NU** | 85 | $11.60 | $12.62 | 🟢 +$86.82 | +8.81% |
-| **ORCL** | 5 | $181.95 | $189.79 | 🟢 +$39.23 | +4.31% |
-| **PATH** | 91 | $10.60 | $10.53 | 🔴 $-6.83 | -0.71% |
-| **SMCI** | 33 | $29.25 | $29.61 | 🟢 +$11.71 | +1.21% |
+| **AVGO** | 1 | $385.71 | $378.50 | 🔴 $-7.21 | -1.87% |
+| **ITRI** | 12 | $81.80 | $81.10 | 🔴 $-8.40 | -0.86% |
+| **META** | 1 | $568.17 | $598.15 | 🟢 +$29.98 | +5.28% |
+| **NU** | 85 | $11.60 | $12.70 | 🟢 +$93.62 | +9.50% |
+| **ORCL** | 5 | $181.95 | $187.41 | 🟢 +$27.30 | +3.00% |
+| **PATH** | 91 | $10.60 | $10.51 | 🔴 $-8.14 | -0.84% |
+| **SMCI** | 33 | $29.25 | $29.48 | 🟢 +$7.59 | +0.79% |
 
 ## 🔴 Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
