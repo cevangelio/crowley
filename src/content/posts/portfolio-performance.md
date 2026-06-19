@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-06-19T06:05:11.252264+08:00
+pubDatetime: 2026-06-19T17:23:57.972740+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -16,11 +16,11 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 ## 📊 Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
-| **Net Portfolio Equity** | **$100,131.71** | Total current liquidation value of cash and stock holdings |
-| **Total Unrealized P&L** | 🟢 **+$142.68** (+0.14%) | Total return of current open holdings |
+| **Net Portfolio Equity** | **$100,137.32** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🟢 **+$148.39** (+0.15%) | Total return of current open holdings |
 | **Cash Balance** | $91,381.00 | Idle reserve currency available for limit orders |
-| **Buying Power** | $384,241.09 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-06-19 06:05:11 (SGT)` | Timestamp of daily execution and sync run |
+| **Buying Power** | $384,256.80 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-06-19 17:23:57 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
@@ -35,15 +35,15 @@ The chart below illustrates the exposure of our currently held active positions 
 ## 💼 Current Position Holdings
 | Ticker | Industry | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AVGO** | Semiconductors | 1 | $385.71 | $411.80 | 🟢 +$26.09 | +6.76% |
+| **AVGO** | Semiconductors | 1 | $385.71 | $411.35 | 🟢 +$25.64 | +6.65% |
 | **GDDY** | Software - Infrastructure | 12 | $76.21 | $77.04 | 🟢 +$9.96 | +1.09% |
 | **GPI** | Auto & Truck Dealerships | 3 | $316.15 | $313.16 | 🔴 $-8.97 | -0.95% |
 | **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $80.81 | 🔴 $-11.88 | -1.21% |
-| **META** | Internet Content & Information | 1 | $568.17 | $576.56 | 🟢 +$8.39 | +1.48% |
-| **NU** | Banks - Regional | 85 | $11.60 | $12.64 | 🟢 +$88.52 | +8.98% |
-| **ORCL** | Software - Infrastructure | 5 | $181.95 | $183.82 | 🟢 +$9.36 | +1.03% |
-| **PATH** | Software - Infrastructure | 187 | $10.42 | $10.26 | 🔴 $-29.61 | -1.52% |
-| **SMCI** | Computer Hardware | 33 | $29.25 | $30.79 | 🟢 +$50.82 | +5.27% |
+| **META** | Internet Content & Information | 1 | $568.17 | $577.22 | 🟢 +$9.05 | +1.59% |
+| **NU** | Banks - Regional | 85 | $11.60 | $12.71 | 🟢 +$94.47 | +9.58% |
+| **ORCL** | Software - Infrastructure | 5 | $181.95 | $184.29 | 🟢 +$11.70 | +1.29% |
+| **PATH** | Software - Infrastructure | 187 | $10.42 | $10.27 | 🔴 $-28.11 | -1.44% |
+| **SMCI** | Computer Hardware | 33 | $29.25 | $30.66 | 🟢 +$46.53 | +4.82% |
 
 ## 🔴 Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
