@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-06-20T00:00:10.642402+08:00
+pubDatetime: 2026-06-20T06:05:11.161666+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -20,7 +20,7 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 | **Total Unrealized P&L** | 🟢 **+$148.39** (+0.15%) | Total return of current open holdings |
 | **Cash Balance** | $91,381.00 | Idle reserve currency available for limit orders |
 | **Buying Power** | $384,256.80 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-06-20 00:00:10 (SGT)` | Timestamp of daily execution and sync run |
+| **Report Updated** | `2026-06-20 06:05:11 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
