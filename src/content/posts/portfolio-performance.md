@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-09-24T06:05:14.217323+08:00
+pubDatetime: 2026-09-25T00:00:15.302442+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -16,11 +16,11 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 ## 📊 Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
-| **Net Portfolio Equity** | **$97,626.92** | Total current liquidation value of cash and stock holdings |
-| **Total Unrealized P&L** | 🔴 **$-3,425.42** (-3.39%) | Total return of current open holdings |
+| **Net Portfolio Equity** | **$96,312.40** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🔴 **$-4,751.40** (-4.70%) | Total return of current open holdings |
 | **Cash Balance** | $24,224.56 | Idle reserve currency available for limit orders |
-| **Buying Power** | $302,424.84 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-09-24 06:05:14 (SGT)` | Timestamp of daily execution and sync run |
+| **Buying Power** | $298,744.19 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-09-25 00:00:15 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
@@ -35,35 +35,35 @@ The chart below illustrates the exposure of our currently held active positions 
 ## 💼 Current Position Holdings
 | Ticker | Industry | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $165.05 | 🔴 $-117.29 | -12.44% |
-| **AVGO** | Semiconductors | 1 | $385.71 | $355.35 | 🔴 $-30.36 | -7.87% |
-| **BIRK** | Footwear & Accessories | 407 | $37.32 | $31.50 | 🔴 $-2,367.81 | -15.59% |
-| **BLBD** | Farm & Heavy Construction Machinery | 231 | $65.52 | $58.09 | 🔴 $-1,715.40 | -11.34% |
-| **BVN** | Other Precious Metals & Mining | 32 | $31.88 | $33.42 | 🟢 +$49.44 | +4.85% |
-| **CELH** | Beverages - Non-Alcoholic | 33 | $29.71 | $29.18 | 🔴 $-17.58 | -1.79% |
-| **CPRI** | Luxury Goods | 1042 | $14.55 | $15.59 | 🟢 +$1,084.30 | +7.15% |
-| **DUOL** | Software - Application | 14 | $131.04 | $146.12 | 🟢 +$211.02 | +11.50% |
-| **FIS** | Information Technology Services | 23 | $41.79 | $34.75 | 🔴 $-161.92 | -16.85% |
-| **GDDY** | Software - Infrastructure | 6 | $76.21 | $96.38 | 🟢 +$121.02 | +26.47% |
-| **GDS** | Information Technology Services | 30 | $32.77 | $33.11 | 🟢 +$10.20 | +1.04% |
-| **GGAL** | Banks - Regional | 17 | $56.04 | $39.99 | 🔴 $-272.84 | -28.64% |
-| **GOOGL** | Internet Content & Information | 3 | $319.44 | $338.80 | 🟢 +$58.08 | +6.06% |
-| **GPI** | Auto & Truck Dealerships | 3 | $316.15 | $248.00 | 🔴 $-204.45 | -21.56% |
-| **HUBS** | Software - Application | 8 | $221.18 | $225.15 | 🟢 +$31.75 | +1.79% |
-| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $91.32 | 🟢 +$114.24 | +11.64% |
-| **KBR** | Engineering & Construction | 27 | $36.23 | $35.34 | 🔴 $-24.11 | -2.46% |
-| **NESR** | Oil & Gas Equipment & Services | 34 | $28.74 | $33.00 | 🟢 +$144.84 | +14.82% |
-| **NU** | Banks - Regional | 57 | $11.60 | $13.68 | 🟢 +$118.64 | +17.95% |
-| **ON** | Semiconductors | 10 | $90.45 | $74.02 | 🔴 $-164.40 | -18.17% |
-| **ORCL** | Software - Infrastructure | 5 | $181.95 | $144.48 | 🔴 $-187.35 | -20.59% |
-| **PATH** | Software - Infrastructure | 38 | $10.25 | $13.05 | 🟢 +$106.36 | +27.31% |
-| **PYPL** | Credit Services | 17 | $56.05 | $52.61 | 🔴 $-58.48 | -6.14% |
-| **QCOM** | Semiconductors | 15 | $193.68 | $197.74 | 🟢 +$60.83 | +2.09% |
-| **SMCI** | Computer Hardware | 22 | $29.25 | $41.49 | 🟢 +$269.28 | +41.85% |
-| **SRE** | Utilities - Diversified | 57 | $84.75 | $79.00 | 🔴 $-327.89 | -6.79% |
-| **T** | Telecom Services | 47 | $20.85 | $25.33 | 🟢 +$210.34 | +21.46% |
-| **WEN** | Restaurants | 257 | $8.02 | $6.77 | 🔴 $-322.21 | -15.62% |
-| **ZG** | Internet Content & Information | 31 | $31.35 | $29.94 | 🔴 $-43.68 | -4.49% |
+| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $162.27 | 🔴 $-131.18 | -13.92% |
+| **AVGO** | Semiconductors | 1 | $385.71 | $348.24 | 🔴 $-37.47 | -9.71% |
+| **BIRK** | Footwear & Accessories | 407 | $37.32 | $31.27 | 🔴 $-2,459.39 | -16.19% |
+| **BLBD** | Farm & Heavy Construction Machinery | 231 | $65.52 | $56.51 | 🔴 $-2,080.38 | -13.75% |
+| **BVN** | Other Precious Metals & Mining | 32 | $31.88 | $32.20 | 🟢 +$10.40 | +1.02% |
+| **CELH** | Beverages - Non-Alcoholic | 33 | $29.71 | $28.00 | 🔴 $-56.52 | -5.76% |
+| **CPRI** | Luxury Goods | 1042 | $14.55 | $15.18 | 🟢 +$649.37 | +4.28% |
+| **DUOL** | Software - Application | 14 | $131.04 | $147.28 | 🟢 +$227.30 | +12.39% |
+| **FIS** | Information Technology Services | 23 | $41.79 | $34.56 | 🔴 $-166.29 | -17.30% |
+| **GDDY** | Software - Infrastructure | 6 | $76.21 | $99.26 | 🟢 +$138.30 | +30.25% |
+| **GDS** | Information Technology Services | 30 | $32.77 | $33.15 | 🟢 +$11.40 | +1.16% |
+| **GGAL** | Banks - Regional | 17 | $56.04 | $39.41 | 🔴 $-282.70 | -29.67% |
+| **GOOGL** | Internet Content & Information | 3 | $319.44 | $339.17 | 🟢 +$59.17 | +6.17% |
+| **GPI** | Auto & Truck Dealerships | 3 | $316.15 | $247.01 | 🔴 $-207.41 | -21.87% |
+| **HUBS** | Software - Application | 8 | $221.18 | $226.08 | 🟢 +$39.19 | +2.21% |
+| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $90.17 | 🟢 +$100.44 | +10.23% |
+| **KBR** | Engineering & Construction | 27 | $36.23 | $35.06 | 🔴 $-31.67 | -3.24% |
+| **NESR** | Oil & Gas Equipment & Services | 34 | $28.74 | $32.50 | 🟢 +$127.84 | +13.08% |
+| **NU** | Banks - Regional | 57 | $11.60 | $13.40 | 🟢 +$102.97 | +15.57% |
+| **ON** | Semiconductors | 10 | $90.45 | $72.12 | 🔴 $-183.35 | -20.27% |
+| **ORCL** | Software - Infrastructure | 5 | $181.95 | $138.34 | 🔴 $-218.05 | -23.97% |
+| **PATH** | Software - Infrastructure | 38 | $10.25 | $12.72 | 🟢 +$93.86 | +24.10% |
+| **PYPL** | Credit Services | 17 | $56.05 | $51.94 | 🔴 $-69.87 | -7.33% |
+| **QCOM** | Semiconductors | 15 | $193.68 | $193.19 | 🔴 $-7.42 | -0.26% |
+| **SMCI** | Computer Hardware | 22 | $29.25 | $40.14 | 🟢 +$239.58 | +37.23% |
+| **SRE** | Utilities - Diversified | 57 | $84.75 | $77.82 | 🔴 $-395.15 | -8.18% |
+| **T** | Telecom Services | 47 | $20.85 | $25.64 | 🟢 +$224.90 | +22.95% |
+| **WEN** | Restaurants | 257 | $8.02 | $6.59 | 🔴 $-367.18 | -17.81% |
+| **ZG** | Internet Content & Information | 31 | $31.35 | $28.70 | 🔴 $-82.10 | -8.45% |
 
 ## 🔴 Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
