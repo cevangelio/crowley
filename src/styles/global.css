@@ -8,16 +8,43 @@
 @layer base {
   * {
     @apply border-border outline-accent/75;
-    scrollbar-width: auto;
-    scrollbar-color: var(--color-muted) transparent;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
   }
+
+  body {
+    background-color: var(--color-background);
+    background-image:
+      radial-gradient(ellipse 90% 40% at 50% 0%, var(--color-blueprint-dim) 0%, transparent 60%),
+      linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+    background-size: 100% 100%, 32px 32px, 32px 32px;
+    background-attachment: fixed;
+  }
+
   a,
   button {
     @apply outline-accent outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
   }
+
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
+  }
+
+  /* Precision mechanical scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
   }
 }
 
@@ -30,7 +57,29 @@
 }
 
 @utility active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-8;
+  @apply text-accent border-b-2 border-accent pb-0.5 tracking-wider;
+}
+
+/* Blueprint & Machinery Design Utilities */
+@utility blueprint-panel {
+  @apply border border-border bg-muted/30 backdrop-blur-xs relative;
+}
+
+@utility blueprint-crosshair {
+  @apply absolute font-mono text-accent/50 text-[10px] select-none pointer-events-none;
+}
+
+@utility tech-mono {
+  font-family: var(--font-google-sans-code), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.92); }
+}
+
+.animate-beacon {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
 }
 
 :target {

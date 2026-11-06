@@ -57,25 +57,24 @@ if (breadcrumbList[0] === "tags" && !isNaN(Number(breadcrumbList[2]))) {
 }
 ---
 
-<nav class="app-layout mt-8 mb-1" aria-label="breadcrumb">
+<nav class="app-layout mt-8 mb-2" aria-label="breadcrumb">
   <ul
-    class="font-light [&>li]:inline [&>li:not(:last-child)>a]:hover:opacity-100"
+    class="font-mono text-xs tracking-wider text-muted-foreground uppercase [&>li]:inline [&>li:not(:last-child)>a]:hover:text-accent"
   >
     <li>
-      <a href={getRelativeLocaleUrl(locale, "")} class="opacity-80">
+      <a href={getRelativeLocaleUrl(locale, "")} class="transition-colors">
         {t.nav.home}
       </a>
-      <span aria-hidden="true" class="opacity-80">&raquo;</span>
+      <span aria-hidden="true" class="mx-1 text-accent/60">/</span>
     </li>
     {
       breadcrumbList.map((breadcrumb, index) =>
         index + 1 === breadcrumbList.length ? (
           <li>
             <span
-              class:list={["capitalize opacity-75", { lowercase: index > 0 }]}
+              class="text-accent"
               aria-current="page"
             >
-              {/* make the last part lowercase in Home > Tags > some-tag */}
               {navLabels[breadcrumb] ?? decodeSegment(breadcrumb)}
             </span>
           </li>
@@ -83,12 +82,12 @@ if (breadcrumbList[0] === "tags" && !isNaN(Number(breadcrumbList[2]))) {
           <li>
             <a
               href={getRelativeLocaleUrl(locale, breadcrumb)}
-              class="capitalize opacity-70"
+              class="transition-colors"
             >
               {navLabels[breadcrumb] ?? decodeSegment(breadcrumb)}
             </a>
-            <span aria-hidden="true" class="opacity-70">
-              &raquo;
+            <span aria-hidden="true" class="mx-1 text-accent/60">
+              /
             </span>
           </li>
         )

@@ -21,17 +21,17 @@ const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 ---
 
-<div data-pagefind-ignore class="my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div data-pagefind-ignore class="my-8 grid grid-cols-1 gap-4 sm:grid-cols-2 font-mono">
   {
     prevPost && (
       <a
         href={getPostUrl(prevPost.id, prevPost.filePath, locale)}
-        class="flex w-full gap-1 hover:opacity-75"
+        class="border border-border/70 bg-muted/20 p-3.5 hover:border-accent/70 hover:bg-muted/40 transition-all flex items-start gap-2.5 text-xs"
       >
-        <IconArrowLeft class="inline-block flex-none rtl:rotate-180" />
+        <IconArrowLeft class="size-4 flex-none text-accent mt-0.5 rtl:rotate-180" />
         <div>
-          <span>{t.post.previousPost}</span>
-          <div class="text-accent/85 text-sm">{prevPost.title}</div>
+          <span class="text-[10px] uppercase tracking-wider text-muted-foreground block">{t.post.previousPost}</span>
+          <div class="text-foreground text-sm font-semibold tracking-tight mt-0.5">{prevPost.title}</div>
         </div>
       </a>
     )
@@ -40,13 +40,13 @@ const t = useTranslations(locale);
     nextPost && (
       <a
         href={getPostUrl(nextPost.id, nextPost.filePath, locale)}
-        class="flex w-full justify-end gap-1 text-end hover:opacity-75 sm:col-start-2"
+        class="border border-border/70 bg-muted/20 p-3.5 hover:border-accent/70 hover:bg-muted/40 transition-all flex items-start justify-end text-end gap-2.5 text-xs sm:col-start-2"
       >
         <div>
-          <span>{t.post.nextPost}</span>
-          <div class="text-accent/85 text-sm">{nextPost.title}</div>
+          <span class="text-[10px] uppercase tracking-wider text-muted-foreground block">{t.post.nextPost}</span>
+          <div class="text-foreground text-sm font-semibold tracking-tight mt-0.5">{nextPost.title}</div>
         </div>
-        <IconArrowRight class="inline-block flex-none rtl:rotate-180" />
+        <IconArrowRight class="size-4 flex-none text-accent mt-0.5 rtl:rotate-180" />
       </a>
     )
   }

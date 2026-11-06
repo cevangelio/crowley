@@ -13,19 +13,33 @@ const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 const { title, description, ...props } = data;
 ---
 
-<li class="my-6">
-  <a
-    href={getPostUrl(id, filePath, Astro.currentLocale)}
-    class:list={[
-      "text-accent inline-block text-lg font-medium",
-      "decoration-dashed underline-offset-4 hover:underline",
-      "focus-visible:no-underline focus-visible:underline-offset-0",
-    ]}
-  >
-    <Heading transition:name={toTransitionName(title)}>
-      {title}
-    </Heading>
-  </a>
-  <Datetime {...props} />
-  <p>{description}</p>
+<li class="group relative my-4 border border-border/70 bg-muted/15 p-4 transition-all duration-200 hover:border-accent/60 hover:bg-muted/35">
+  <!-- Precision corner crosshair markers -->
+  <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/30 select-none group-hover:text-accent">
+    +
+  </span>
+  <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/30 select-none group-hover:text-accent">
+    +
+  </span>
+
+  <div class="mb-1 flex items-center justify-between gap-2">
+    <a
+      href={getPostUrl(id, filePath, Astro.currentLocale)}
+      class="text-foreground group-hover:text-accent inline-block text-base font-semibold tracking-tight transition-colors focus-visible:no-underline"
+    >
+      <Heading transition:name={toTransitionName(title)} class="inline">
+        {title}
+      </Heading>
+    </a>
+  </div>
+
+  <div class="my-1.5 flex items-center gap-2">
+    <Datetime {...props} />
+  </div>
+
+  {description && (
+    <p class="text-muted-foreground text-sm leading-relaxed mt-2">
+      {description}
+    </p>
+  )}
 </li>

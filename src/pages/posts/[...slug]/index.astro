@@ -111,9 +111,13 @@ const ogImage = ogImageUrl
     class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
     data-pagefind-body
   >
+    <div class="mb-2 font-mono text-[10px] tracking-widest text-accent uppercase flex items-center gap-2">
+      <span class="size-1.5 rounded-full bg-status-ok"></span>
+      <span>CLASSIFIED ENTRY // LOG_ID: {post.id}</span>
+    </div>
     <h1
       style={{ viewTransitionName: toTransitionName(title) }}
-      class="text-accent inline-block text-2xl font-bold sm:text-3xl"
+      class="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
     >
       {title}
     </h1>

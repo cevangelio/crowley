@@ -60,26 +60,31 @@
     }
 
     table {
+      @apply border-border border my-4 w-full text-sm font-mono;
       th,
       td {
-        @apply border-border border p-2;
+        @apply border-border border p-2.5;
       }
 
       th {
-        @apply py-1.5;
+        @apply bg-muted/60 text-accent font-semibold tracking-wider uppercase py-2 text-xs text-left;
+      }
+
+      tr:nth-child(even) td {
+        @apply bg-muted/20;
       }
     }
 
     code {
-      @apply bg-muted/75 text-foreground rounded p-1 wrap-break-word before:content-none after:content-none;
+      @apply bg-muted text-accent font-mono text-xs px-1.5 py-0.5 border border-border/80 wrap-break-word before:content-none after:content-none;
     }
 
     .astro-code code {
-      @apply flex-[1_0_100%] bg-inherit p-0;
+      @apply flex-[1_0_100%] bg-inherit p-0 border-none text-inherit;
     }
 
     blockquote {
-      @apply border-s-accent/80 wrap-break-word opacity-80;
+      @apply border-s-2 border-s-accent bg-muted/30 px-4 py-3 my-4 text-foreground/90 font-mono text-sm wrap-break-word;
     }
 
     details:not(.callout) {

@@ -19,10 +19,28 @@ const backUrl = config.features.showBackButton
 <main
   data-backUrl={backUrl}
   id="main-content"
-  class:list={["app-layout pb-4", className]}
+  class:list={["app-layout pb-8", className]}
 >
-  <h1 class="text-2xl font-semibold sm:text-3xl">{pageTitle}</h1>
-  <p class="mt-2 mb-6 italic">{pageDesc}</p>
+  <div class="mb-6 border-b border-border/80 pb-4">
+    <div class="font-mono text-[10px] tracking-widest text-accent uppercase mb-1">
+      // TELEMETRY RECORD
+    </div>
+    <h1 class="font-mono text-2xl font-bold uppercase tracking-tight sm:text-3xl">
+      {
+        Array.isArray(pageTitle) ? (
+          <span>
+            {pageTitle[0]}
+            <span class="text-accent">{pageTitle[1]}</span>
+          </span>
+        ) : (
+          pageTitle
+        )
+      }
+    </h1>
+    {pageDesc && (
+      <p class="mt-2 font-mono text-xs text-muted-foreground">{pageDesc}</p>
+    )}
+  </div>
   <slot />
 </main>
 

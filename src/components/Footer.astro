@@ -18,13 +18,26 @@ const currentYear = new Date().getFullYear();
   {...attrs}
 >
   <div
-    class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"
+    class="border-border relative flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-5"
   >
+    <span class="absolute -top-1.5 left-0 font-mono text-[10px] text-accent/60 select-none">
+      +
+    </span>
+    <span class="absolute -top-1.5 right-0 font-mono text-[10px] text-accent/60 select-none">
+      +
+    </span>
+
     <Socials />
-    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <span>{t.footer.copyright} &#169; {currentYear}</span>
-      <span class="hidden sm:inline">&nbsp;|&nbsp;</span>
-      <span>{t.footer.allRightsReserved}</span>
+    <div class="my-2 flex flex-col items-center gap-1 font-mono text-xs text-muted-foreground whitespace-nowrap sm:items-start sm:my-0">
+      <div class="flex items-center gap-1.5">
+        <span class="size-1.5 rounded-full bg-status-ok"></span>
+        <span class="tracking-wider uppercase">BAD OMEN // AUTONOMOUS JOURNAL</span>
+      </div>
+      <div>
+        <span>{t.footer.copyright} &#169; {currentYear}</span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>{t.footer.allRightsReserved}</span>
+      </div>
     </div>
   </div>
 </footer>

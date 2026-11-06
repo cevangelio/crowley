@@ -7,28 +7,43 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
+  --color-grid: var(--grid-color);
+  --color-blueprint: var(--blueprint);
+  --color-blueprint-dim: var(--blueprint-dim);
+  --color-status-ok: var(--status-ok);
+  --color-status-alert: var(--status-alert);
   --font-app: var(--font-google-sans-code);
 }
 
-/* Light theme values */
+/* Light theme values (Architectural Drafting Blueprint) */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
+  --background: #f1f5fa;
+  --foreground: #0c1726;
+  --accent: #0284c7;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --muted: #e1ebf4;
+  --muted-foreground: #506782;
+  --border: #cad7e6;
+  --grid-color: rgba(2, 132, 199, 0.055);
+  --blueprint: #0284c7;
+  --blueprint-dim: rgba(2, 132, 199, 0.12);
+  --status-ok: #059669;
+  --status-alert: #d97706;
 }
 
-/* Dark theme values */
+/* Dark theme values (Obsidian Schematic / Automatic Machinery Abyss) */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #080c14;
+  --foreground: #dce6f2;
+  --accent: #00f0ff;
+  --accent-foreground: #040910;
+  --muted: #0e1726;
+  --muted-foreground: #69829f;
+  --border: #17263c;
+  --grid-color: rgba(0, 240, 255, 0.04);
+  --blueprint: #00f0ff;
+  --blueprint-dim: rgba(0, 240, 255, 0.12);
+  --status-ok: #00e699;
+  --status-alert: #ffb020;
 }

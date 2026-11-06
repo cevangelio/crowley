@@ -41,9 +41,13 @@ const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
       )
         .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
         .map(([year, yearGroup]) => (
-          <div>
-            <span class="text-2xl font-bold">{year}</span>
-            <sup class="text-muted-foreground text-sm">{yearGroup.length}</sup>
+          <div class="my-6 border-b border-border/70 pb-6">
+            <div class="flex items-baseline gap-2 font-mono">
+              <span class="text-xl font-bold uppercase tracking-wider text-accent">{year}</span>
+              <span class="border border-border/80 bg-muted/30 px-1.5 py-0.5 text-[10px] text-muted-foreground">
+                {yearGroup.length} LOGS
+              </span>
+            </div>
             {Object.entries(
               getPostsByGroupCondition(
                 yearGroup,
@@ -53,17 +57,17 @@ const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
               .sort(([monthA], [monthB]) => Number(monthB) - Number(monthA))
               .map(([month, monthGroup]) => (
                 <div class="flex flex-col sm:flex-row">
-                  <div class="mt-6 min-w-36 text-lg sm:my-6">
-                    <span class="font-bold">
+                  <div class="mt-4 min-w-36 font-mono text-xs uppercase tracking-wider text-muted-foreground sm:my-6">
+                    <span class="font-bold text-foreground">
                       {monthFormatter.format(
                         new Date(2000, Number(month) - 1, 1)
                       )}
                     </span>
-                    <sup class="text-muted-foreground text-xs">
-                      {monthGroup.length}
-                    </sup>
+                    <span class="ms-1 text-[10px] text-accent/70">
+                      [{monthGroup.length}]
+                    </span>
                   </div>
-                  <ul>
+                  <ul class="w-full space-y-2">
                     {monthGroup
                       .sort(
                         (a, b) =>
