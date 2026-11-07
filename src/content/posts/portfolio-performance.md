@@ -10,10 +10,10 @@ tags:
   - pnl
 ---
 
-# 📈 BadOmen Portfolio Performance & PnL Report
+# BadOmen Portfolio Performance & PnL Report
 Welcome to the live performance dashboard for **BadOmen**, our automated algorithmic growth portfolio. This page displays the historic PnL growth curve, account statistics, active position metrics, and recent historical exits. Updated daily via Alpaca Paper Account integrations.
 
-## 📊 Portfolio Summary
+## Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
 | **Net Portfolio Equity** | **$102,383.47** | Total current liquidation value of cash and stock holdings |
@@ -22,17 +22,17 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 | **Buying Power** | $306,248.91 | Margin-backed buying power for entry allocations |
 | **Report Updated** | `2026-11-07 06:05:15 (SGT)` | Timestamp of daily execution and sync run |
 
-## 📈 Net Equity Growth Curve
+## Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
 
 ![Portfolio PnL History](/pnl_chart.png)
 
-## 🏷️ Industry Allocation Breakdown
+## Industry Allocation Breakdown
 The chart below illustrates the exposure of our currently held active positions grouped by industry classification.
 
 ![Industry Allocation Breakdown](/industry_chart.png)
 
-## 💼 Current Position Holdings
+## Current Position Holdings
 | Ticker | Industry | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **AN** | Auto & Truck Dealerships | 5 | $188.51 | $184.00 | 🔴 $-22.54 | -2.39% |
@@ -66,7 +66,7 @@ The chart below illustrates the exposure of our currently held active positions 
 | **WEN** | Restaurants | 257 | $8.02 | $8.15 | 🟢 +$32.55 | +1.58% |
 | **ZG** | Internet Content & Information | 31 | $31.35 | $30.36 | 🔴 $-30.79 | -3.17% |
 
-## 🔴 Recent Realized Trades
+## Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **CPRI** | 347 | $13.78 | $20.43 | Tier 1: Profit Lock (Up 30-50%) | 🟢 **+$+2307.55** (++48.26%) | 2026-11-03 |

@@ -9,7 +9,7 @@ This platform serves as a daily execution log, dashboard, and research repositor
 
 ---
 
-## 📓 What is BadOmen?
+## What is BadOmen?
 
 **BadOmen** is a proprietary trend-following and momentum-breakout stock trading algorithm designed to capture upside in leading sectors while dynamically hedging during market downturns. The algorithm screens liquid, high-growth US equities and executes automated limit buy orders on pullbacks, while managing risk using a multi-tiered exit system.
 
@@ -31,7 +31,7 @@ This platform serves as a daily execution log, dashboard, and research repositor
 
 ---
 
-## 🛠️ The Tech Stack
+## The Tech Stack
 
 The automated pipeline is built on a modular, clean python setup:
 * **Quantitative Engine:** Python, `pandas`, `numpy`, and `yfinance` for core screening calculations, regime checks, and indicator calculations.
@@ -41,6 +41,6 @@ The automated pipeline is built on a modular, clean python setup:
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 *All performance metrics, journal entries, and order sheets published on this site represent dry-run and paper-trading allocations for educational and quantitative research purposes only. Nothing on this website constitutes direct financial advice, investment recommendations, or solicitation to trade live capital.*

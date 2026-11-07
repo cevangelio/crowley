@@ -11,13 +11,13 @@ tags:
 ---
 
 
-# 📓 BadOmen Backtest Findings — Dynamic Regime-Switching Sizing & Screening
+# BadOmen Backtest Findings — Dynamic Regime-Switching Sizing & Screening
 
 We recently concluded a comprehensive backtesting and optimization sequence to address the out-of-sample performance of the **BadOmen Strategy** during the 2023–2025 bull market. By moving from a static configuration to a **Dynamic Regime-Switching** system, we resolved the strategy's two biggest issues: **cash drag** and **filter whipsaws**.
 
 ---
 
-## 🔍 The Structural Problem
+## The Structural Problem
 
 In the original backtester, we utilized a static risk management and screening configuration:
 *   **Static $30,000 Cash Safety Cushion** (regardless of market conditions).
@@ -32,7 +32,7 @@ While highly defensive (capping maximum drawdown to only **-10.81%** in the 2023
 
 ---
 
-## 🛠️ The Solution: Dynamic Regime-Switching
+## The Solution: Dynamic Regime-Switching
 
 We implemented a point-in-time trend check. Every day, the system checks whether SPY is trading above or below its **200-day Simple Moving Average (SMA)**, adjusting the strategy's parameters dynamically:
 
@@ -47,7 +47,7 @@ Additionally, we replaced the hardcoded **15.0% pullback rule** with **Beta-Adju
 
 ---
 
-## 📊 Backtest Performance Reports
+## Backtest Performance Reports
 
 ### Phase 1: In-Sample (2021-01-04 to 2023-06-30)
 *   **Timeline**: 627 trading days (includes the 2022 bear market)
@@ -76,7 +76,7 @@ Additionally, we replaced the hardcoded **15.0% pullback rule** with **Beta-Adju
 
 ---
 
-## 💡 Key Quantitative Insights
+## Key Quantitative Insights
 
 1.  **Enabling Growth Leaders**: Bypassing the growth deceleration check during bull markets successfully allowed the strategy to hold recovery leaders (such as Nvidia) that experienced temporary consolidation quarters but maintained massive long-term structural momentum.
 2.  **Downside Filter Safety**: Keeping the deceleration checks active and cash cushions high during bear regimes (when SPY is below its 200 SMA) effectively protected capital during the 2022 downturn.
@@ -84,6 +84,6 @@ Additionally, we replaced the hardcoded **15.0% pullback rule** with **Beta-Adju
 
 ---
 
-## 🚀 Live Integration
+## Live Integration
 
 These backtesting parameters have been pushed directly to the live trading pipeline (`trader.py`, `magic_screener.py`, and `helpers/execution_engine.py`). They will govern our live paper trading operations dynamically going forward.

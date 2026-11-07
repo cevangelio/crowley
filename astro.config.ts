@@ -17,6 +17,7 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import { remarkCleanEmojis } from "./src/utils/transformers/cleanEmojis";
 import config from "./astro-paper.config";
 
 export default defineConfig({
@@ -38,6 +39,7 @@ export default defineConfig({
   markdown: {
     processor: unified({
       remarkPlugins: [
+        remarkCleanEmojis,
         remarkToc,
         [remarkCollapse, { test: "Table of contents" }],
       ],
