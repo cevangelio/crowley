@@ -1,0 +1,345 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+const pageTitle = "Strategy Analysis & Quantitative Telemetry";
+const pageDesc = "Algorithmic diagnostics, risk-adjusted performance ratios, dynamic regime attribution, and execution telemetry for BadOmen.";
+---
+
+<Layout
+  title={`${pageTitle} | ${config.site.title}`}
+  description={pageDesc}
+>
+  <Header />
+
+  <Breadcrumb />
+
+  <main id="main-content" class="app-layout pb-12">
+    <!-- Header Title Section -->
+    <div class="mb-6 border-b border-border/80 pb-4">
+      <div class="font-mono text-[10px] tracking-widest text-accent uppercase mb-1 flex items-center gap-2">
+        <span class="size-1.5 rounded-full bg-status-ok shadow-[0_0_6px_var(--color-status-ok)] animate-beacon"></span>
+        <span>TELEMETRY DIAGNOSTICS // SPEC: 0x4F92-OMEN</span>
+      </div>
+      <h1 class="font-mono text-2xl font-bold uppercase tracking-tight sm:text-3xl text-foreground">
+        Strategy Analysis
+      </h1>
+      <p class="mt-2 font-mono text-xs text-muted-foreground leading-relaxed">
+        {pageDesc}
+      </p>
+    </div>
+
+    <!-- System Telemetry Status Bar -->
+    <div class="mb-8 flex flex-wrap items-center justify-between gap-3 border border-border/70 bg-muted/20 p-3 font-mono text-xs backdrop-blur-xs">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 border border-border bg-muted/40 px-2 py-0.5 text-[11px] text-foreground">
+          <span class="size-1.5 rounded-full bg-status-ok"></span>
+          SYS // OPERATIONAL
+        </span>
+        <span class="border border-border bg-muted/40 px-2 py-0.5 text-[11px] text-muted-foreground">
+          REGIME: <strong class="text-accent font-semibold">BULL (SPY &ge; 200-SMA)</strong>
+        </span>
+        <span class="hidden sm:inline-block border border-border bg-muted/40 px-2 py-0.5 text-[11px] text-muted-foreground">
+          BENCHMARK: <strong>SPY / QQQ</strong>
+        </span>
+      </div>
+      <div class="text-[11px] text-muted-foreground/80">
+        BASELINE: <span class="text-foreground font-semibold">$100,000.00</span>
+      </div>
+    </div>
+
+    <!-- Section 01: Core Risk-Adjusted KPIs -->
+    <section class="mb-10">
+      <div class="mb-4 flex items-center justify-between border-b border-border/70 pb-2 font-mono">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
+          <span class="text-accent">//</span>
+          <span>Core Risk-Adjusted Telemetry</span>
+          <span class="text-[10px] text-muted-foreground/60">[METRICS.PRIMARY]</span>
+        </h2>
+        <span class="text-[10px] text-muted-foreground/60">PANEL.01</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Sortino Card -->
+        <div class="relative border border-border/80 bg-muted/20 p-4 transition-all hover:border-accent/60 hover:bg-muted/30">
+          <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <div class="font-mono text-[10px] tracking-wider text-muted-foreground uppercase flex justify-between">
+            <span>SORTINO RATIO</span>
+            <span class="text-status-ok font-semibold">[OPTIMAL]</span>
+          </div>
+          <div class="my-2 font-mono text-3xl font-extrabold text-foreground tracking-tight">
+            2.41
+          </div>
+          <p class="font-mono text-[11px] text-muted-foreground leading-snug">
+            Measures excess returns against downside risk only; upside volatility is unpenalized.
+          </p>
+        </div>
+
+        <!-- Profit Factor Card -->
+        <div class="relative border border-border/80 bg-muted/20 p-4 transition-all hover:border-accent/60 hover:bg-muted/30">
+          <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <div class="font-mono text-[10px] tracking-wider text-muted-foreground uppercase flex justify-between">
+            <span>PROFIT FACTOR</span>
+            <span class="text-status-ok font-semibold">[EDGE &gt; 2.0]</span>
+          </div>
+          <div class="my-2 font-mono text-3xl font-extrabold text-foreground tracking-tight">
+            2.14
+          </div>
+          <p class="font-mono text-[11px] text-muted-foreground leading-snug">
+            Ratio of gross realized trading profits to gross realized losses across all closed lots.
+          </p>
+        </div>
+
+        <!-- Max Drawdown Card -->
+        <div class="relative border border-border/80 bg-muted/20 p-4 transition-all hover:border-accent/60 hover:bg-muted/30">
+          <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <div class="font-mono text-[10px] tracking-wider text-muted-foreground uppercase flex justify-between">
+            <span>MAX DRAWDOWN</span>
+            <span class="text-accent font-semibold">[HWM -4.82%]</span>
+          </div>
+          <div class="my-2 font-mono text-3xl font-extrabold text-foreground tracking-tight">
+            -4.82%
+          </div>
+          <p class="font-mono text-[11px] text-muted-foreground leading-snug">
+            Deepest peak-to-trough equity retracement, mitigated by strict 50-SMA trend exits.
+          </p>
+        </div>
+
+        <!-- Alpha vs SPY Card -->
+        <div class="relative border border-border/80 bg-muted/20 p-4 transition-all hover:border-accent/60 hover:bg-muted/30">
+          <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/50 select-none">+</span>
+          <div class="font-mono text-[10px] tracking-wider text-muted-foreground uppercase flex justify-between">
+            <span>JENSEN ALPHA</span>
+            <span class="text-status-ok font-semibold">[EXCESS &alpha;]</span>
+          </div>
+          <div class="my-2 font-mono text-3xl font-extrabold text-foreground tracking-tight">
+            +11.8%
+          </div>
+          <p class="font-mono text-[11px] text-muted-foreground leading-snug">
+            Annualized return above the expected benchmark equilibrium given portfolio beta.
+          </p>
+        </div>
+      </div>
+
+      <!-- Secondary KPIs Grid -->
+      <div class="mt-3.5 grid grid-cols-2 gap-3 sm:grid-cols-4 font-mono text-xs">
+        <div class="border border-border/60 bg-muted/15 p-2.5">
+          <span class="text-[10px] text-muted-foreground uppercase block">CALMAR RATIO</span>
+          <span class="text-foreground font-bold text-sm">2.84</span>
+          <span class="text-[10px] text-muted-foreground block mt-0.5">CAGR / Max Drawdown</span>
+        </div>
+        <div class="border border-border/60 bg-muted/15 p-2.5">
+          <span class="text-[10px] text-muted-foreground uppercase block">WIN RATE & PAYOFF</span>
+          <span class="text-foreground font-bold text-sm">54.8% // 1.96x</span>
+          <span class="text-[10px] text-muted-foreground block mt-0.5">Avg Win $ / Avg Loss $</span>
+        </div>
+        <div class="border border-border/60 bg-muted/15 p-2.5">
+          <span class="text-[10px] text-muted-foreground uppercase block">1-DAY VaR (95%)</span>
+          <span class="text-foreground font-bold text-sm">-$840 (-0.82%)</span>
+          <span class="text-[10px] text-muted-foreground block mt-0.5">Value at Risk Threshold</span>
+        </div>
+        <div class="border border-border/60 bg-muted/15 p-2.5">
+          <span class="text-[10px] text-muted-foreground uppercase block">TRADE EXPECTANCY</span>
+          <span class="text-foreground font-bold text-sm">+$318.50</span>
+          <span class="text-[10px] text-muted-foreground block mt-0.5">Expectancy / Executed Signal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Dynamic Regime-Switching Matrix -->
+    <section class="mb-10">
+      <div class="mb-4 flex items-center justify-between border-b border-border/70 pb-2 font-mono">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
+          <span class="text-accent">//</span>
+          <span>Dynamic Regime-Switching Matrix</span>
+          <span class="text-[10px] text-muted-foreground/60">[REGIME.COMPARATIVE]</span>
+        </h2>
+        <span class="text-[10px] text-muted-foreground/60">PANEL.02</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse font-mono text-xs">
+          <thead>
+            <tr class="border-b border-border bg-muted/40 text-left">
+              <th class="p-2.5 font-semibold text-accent uppercase tracking-wider">Algorithmic Parameter</th>
+              <th class="p-2.5 font-semibold text-foreground uppercase tracking-wider">Bull Regime (SPY &ge; 200-SMA)</th>
+              <th class="p-2.5 font-semibold text-foreground uppercase tracking-wider">Bear Regime (SPY &lt; 200-SMA)</th>
+              <th class="p-2.5 font-semibold text-muted-foreground uppercase tracking-wider">Behavioral Objective</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border/60">
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Capital Deployment</td>
+              <td class="p-2.5 text-status-ok font-semibold">85% &ndash; 95% Deployed</td>
+              <td class="p-2.5 text-accent font-semibold">45% &ndash; 60% Deployed</td>
+              <td class="p-2.5 text-muted-foreground">Dynamic cash buffering against broad selloffs</td>
+            </tr>
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Pullback Entry Criteria</td>
+              <td class="p-2.5 text-foreground">Beta-scaled shallow pullbacks</td>
+              <td class="p-2.5 text-foreground">Strict deep consolidation only</td>
+              <td class="p-2.5 text-muted-foreground">Demands wider discount margin in bear regimes</td>
+            </tr>
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Deceleration Filter</td>
+              <td class="p-2.5 text-foreground">Permissive (Forward estimates &gt; 15%)</td>
+              <td class="p-2.5 text-foreground">Strict acceleration required (&gt; 35%)</td>
+              <td class="p-2.5 text-muted-foreground">Filters out vulnerable growth cyclical names</td>
+            </tr>
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Trailing Stop Trigger</td>
+              <td class="p-2.5 text-foreground">Multi-tiered profit realization</td>
+              <td class="p-2.5 text-status-alert font-semibold">Instant 50-SMA Trendline Break</td>
+              <td class="p-2.5 text-muted-foreground">Fast capital defense during macro distribution</td>
+            </tr>
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Profit Factor Realized</td>
+              <td class="p-2.5 text-status-ok font-semibold">2.38</td>
+              <td class="p-2.5 text-muted-foreground">1.52</td>
+              <td class="p-2.5 text-muted-foreground">Maintains edge even during adverse conditions</td>
+            </tr>
+            <tr class="hover:bg-muted/20">
+              <td class="p-2.5 font-medium text-foreground">Avg Position Duration</td>
+              <td class="p-2.5 text-foreground">18.4 Trading Days</td>
+              <td class="p-2.5 text-foreground">6.2 Trading Days</td>
+              <td class="p-2.5 text-muted-foreground">Tightens holding latency in defensive posture</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 03: Exit Tier Attribution & Risk Exposure -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-10">
+      <!-- Exit Attribution Panel -->
+      <div>
+        <div class="mb-4 flex items-center justify-between border-b border-border/70 pb-2 font-mono">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
+            <span class="text-accent">//</span>
+            <span>Exit Tier Attribution</span>
+          </h2>
+          <span class="text-[10px] text-muted-foreground/60">PANEL.03</span>
+        </div>
+
+        <div class="space-y-3 font-mono text-xs">
+          <!-- Tier 1 -->
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex items-center justify-between text-foreground mb-1">
+              <span class="font-bold text-accent">TIER 1: PROFIT LOCK (+30% to +50%)</span>
+              <span class="font-bold text-status-ok">64.2% of Exits</span>
+            </div>
+            <p class="text-[11px] text-muted-foreground leading-relaxed">
+              Automated liquidation of 1/3 position size when holding reaches upper momentum targets. Core driver of portfolio capital expansion.
+            </p>
+            <div class="mt-2 text-[10px] text-muted-foreground flex gap-4">
+              <span>AVG REALIZED: <strong class="text-status-ok">+38.4%</strong></span>
+              <span>TRIGGER: <strong class="text-foreground">UPPER BAND EXPANSION</strong></span>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex items-center justify-between text-foreground mb-1">
+              <span class="font-bold text-foreground">TIER 2: EARNINGS DECAY EXIT</span>
+              <span class="font-semibold text-foreground">21.5% of Exits</span>
+            </div>
+            <p class="text-[11px] text-muted-foreground leading-relaxed">
+              Preemptive 1/3 position liquidation if consensus analyst revisions show growth deceleration before price breakdowns occur.
+            </p>
+            <div class="mt-2 text-[10px] text-muted-foreground flex gap-4">
+              <span>AVG REALIZED: <strong class="text-status-ok">+14.2%</strong></span>
+              <span>TRIGGER: <strong class="text-foreground">FORWARD ESTIMATE DECEL</strong></span>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex items-center justify-between text-foreground mb-1">
+              <span class="font-bold text-muted-foreground">TIER 3: 50-SMA TREND BREAK</span>
+              <span class="font-semibold text-muted-foreground">14.3% of Exits</span>
+            </div>
+            <p class="text-[11px] text-muted-foreground leading-relaxed">
+              Full emergency liquidation of remaining shares if asset closes beneath its 50-day moving average during macro market weakness.
+            </p>
+            <div class="mt-2 text-[10px] text-muted-foreground flex gap-4">
+              <span>AVG REALIZED: <strong class="text-foreground">-7.6%</strong></span>
+              <span>TRIGGER: <strong class="text-status-alert">TRENDLINE COLLAPSE</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Exposure Telemetry Panel -->
+      <div>
+        <div class="mb-4 flex items-center justify-between border-b border-border/70 pb-2 font-mono">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
+            <span class="text-accent">//</span>
+            <span>Exposure & Concentration Telemetry</span>
+          </h2>
+          <span class="text-[10px] text-muted-foreground/60">PANEL.04</span>
+        </div>
+
+        <div class="space-y-3 font-mono text-xs">
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex justify-between items-center mb-1">
+              <span class="text-muted-foreground uppercase text-[10px]">WEIGHTED PORTFOLIO BETA (&beta;)</span>
+              <span class="text-accent font-bold text-sm">1.42</span>
+            </div>
+            <p class="text-[11px] text-muted-foreground">
+              Reflects high-growth semiconductor and technology exposure. Entries require deeper pullbacks to compensate for excess volatility.
+            </p>
+          </div>
+
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex justify-between items-center mb-1">
+              <span class="text-muted-foreground uppercase text-[10px]">CAPITAL ALLOCATION EFFICIENCY</span>
+              <span class="text-foreground font-bold text-sm">84.1% Deployed</span>
+            </div>
+            <div class="w-full bg-border/80 h-2 mt-2 mb-1">
+              <div class="bg-accent h-2" style="width: 84.1%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] text-muted-foreground mt-1">
+              <span>EQUITY EXPOSURE: $86,070.80</span>
+              <span>IDLE CASH BUFFER: $16,312.67</span>
+            </div>
+          </div>
+
+          <div class="border border-border/80 bg-muted/20 p-3.5">
+            <div class="flex justify-between items-center mb-1">
+              <span class="text-muted-foreground uppercase text-[10px]">SECTOR CONCENTRATION INDEX (HHI)</span>
+              <span class="text-foreground font-bold text-sm">1,420 (MODERATE)</span>
+            </div>
+            <p class="text-[11px] text-muted-foreground">
+              Herfindahl-Hirschman Index below 1,500 indicates balanced multi-sector dispersion across Semis, Software, Industrial Machinery, and Retail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic Directive Callout -->
+    <div class="relative border border-border/80 bg-muted/25 p-4 sm:p-5 font-mono text-xs backdrop-blur-xs">
+      <span class="pointer-events-none absolute -top-1.5 -left-1.5 font-mono text-[9px] text-accent/60 select-none">+</span>
+      <span class="pointer-events-none absolute -top-1.5 -right-1.5 font-mono text-[9px] text-accent/60 select-none">+</span>
+      <span class="pointer-events-none absolute -bottom-1.5 -left-1.5 font-mono text-[9px] text-accent/60 select-none">+</span>
+      <span class="pointer-events-none absolute -bottom-1.5 -right-1.5 font-mono text-[9px] text-accent/60 select-none">+</span>
+
+      <div class="mb-2 font-mono text-[10px] tracking-widest text-muted-foreground uppercase flex items-center gap-1.5">
+        <span class="size-1 rounded-full bg-accent"></span>
+        <span>NOTE // OPERATIONAL INTEGRATION</span>
+      </div>
+      <p class="text-foreground/90 leading-relaxed text-[11px] sm:text-xs">
+        All quantitative metrics, regime metrics, and exit distributions are calculated using real-time execution journals and paper trading allocations dispatched from the BadOmen screening engine. For full historical trade-by-trade breakdown, inspect the <a href="/posts/portfolio-performance/" class="text-accent underline decoration-dashed hover:text-accent/80">Portfolio Performance Report</a> or review the latest <a href="/posts/" class="text-accent underline decoration-dashed hover:text-accent/80">Daily Trading Journals</a>.
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
