@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-11-26T00:00:14.315869+08:00
+pubDatetime: 2026-11-26T06:05:12.935750+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -16,11 +16,11 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 ## 📊 Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
-| **Net Portfolio Equity** | **$97,348.96** | Total current liquidation value of cash and stock holdings |
-| **Total Unrealized P&L** | 🔴 **$-132.31** (-0.14%) | Total return of current open holdings |
-| **Cash Balance** | $74,938.26 | Idle reserve currency available for limit orders |
-| **Buying Power** | $356,176.36 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-11-26 00:00:14 (SGT)` | Timestamp of daily execution and sync run |
+| **Net Portfolio Equity** | **$97,581.64** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🟢 **+$308.36** (+0.32%) | Total return of current open holdings |
+| **Cash Balance** | $89,028.35 | Idle reserve currency available for limit orders |
+| **Buying Power** | $377,051.47 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-11-26 06:05:12 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
@@ -35,34 +35,31 @@ The chart below illustrates the exposure of our currently held active positions 
 ## 💼 Current Position Holdings
 | Ticker | Industry | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $180.28 | 🔴 $-41.16 | -4.37% |
-| **AVGO** | Semiconductors | 11 | $285.30 | $283.19 | 🔴 $-23.18 | -0.74% |
-| **BLBD** | Farm & Heavy Construction Machinery | 31 | $61.73 | $54.92 | 🔴 $-210.96 | -11.02% |
-| **CELH** | Beverages - Non-Alcoholic | 5 | $29.71 | $28.03 | 🔴 $-8.41 | -5.66% |
-| **CPRI** | Luxury Goods | 92 | $13.78 | $17.97 | 🟢 +$385.48 | +30.41% |
-| **GDS** | Information Technology Services | 5 | $32.77 | $12.24 | 🔴 $-102.65 | -62.65% |
-| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $97.98 | 🟢 +$194.16 | +19.78% |
-| **LRCX** | Semiconductor Equipment & Materials | 10 | $204.67 | $173.79 | 🔴 $-308.78 | -15.09% |
-| **MRVL** | Semiconductors | 49 | $122.01 | $120.27 | 🔴 $-85.03 | -1.42% |
-| **NESR** | Oil & Gas Equipment & Services | 6 | $28.74 | $18.34 | 🔴 $-62.40 | -36.19% |
-| **NU** | Banks - Regional | 8 | $11.60 | $11.76 | 🟢 +$1.29 | +1.39% |
-| **ON** | Semiconductors | 56 | $58.74 | $57.95 | 🔴 $-44.17 | -1.34% |
-| **PATH** | Software - Infrastructure | 6 | $10.25 | $11.85 | 🟢 +$9.60 | +15.61% |
-| **PYPL** | Credit Services | 3 | $56.05 | $55.83 | 🔴 $-0.66 | -0.39% |
-| **SMCI** | Computer Hardware | 4 | $29.25 | $21.48 | 🔴 $-31.08 | -26.56% |
-| **WEN** | Restaurants | 257 | $8.02 | $8.79 | 🟢 +$195.65 | +9.49% |
+| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $182.61 | 🔴 $-29.49 | -3.13% |
+| **BLBD** | Farm & Heavy Construction Machinery | 21 | $61.73 | $56.61 | 🔴 $-107.52 | -8.29% |
+| **CELH** | Beverages - Non-Alcoholic | 4 | $29.71 | $29.06 | 🔴 $-2.61 | -2.20% |
+| **CPRI** | Luxury Goods | 62 | $13.78 | $17.99 | 🟢 +$261.02 | +30.55% |
+| **GDS** | Information Technology Services | 4 | $32.77 | $13.65 | 🔴 $-76.48 | -58.35% |
+| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $100.81 | 🟢 +$228.12 | +23.24% |
+| **LRCX** | Semiconductor Equipment & Materials | 7 | $204.67 | $185.60 | 🔴 $-133.48 | -9.32% |
+| **NESR** | Oil & Gas Equipment & Services | 4 | $28.74 | $19.00 | 🔴 $-38.96 | -33.89% |
+| **NU** | Banks - Regional | 6 | $11.60 | $12.35 | 🟢 +$4.51 | +6.48% |
+| **PATH** | Software - Infrastructure | 4 | $10.25 | $12.41 | 🟢 +$8.64 | +21.07% |
+| **PYPL** | Credit Services | 2 | $56.05 | $57.51 | 🟢 +$2.92 | +2.60% |
+| **SMCI** | Computer Hardware | 3 | $29.25 | $23.22 | 🔴 $-18.10 | -20.62% |
+| **WEN** | Restaurants | 257 | $8.02 | $8.84 | 🟢 +$209.78 | +10.17% |
 
 ## 🔴 Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **BLBD** | 15 | $61.73 | $56.13 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-84.00** (-9.07%) | 2026-11-25 |
-| **CELH** | 2 | $29.71 | $28.75 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-1.93** (-3.24%) | 2026-11-25 |
-| **CPRI** | 46 | $13.78 | $18.17 | Tier 1: Profit Lock (Up 30-50%) | 🟢 **+$+201.94** (++31.86%) | 2026-11-25 |
-| **GDS** | 2 | $32.77 | $13.70 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-38.14** (-58.19%) | 2026-11-25 |
-| **LRCX** | 5 | $204.66 | $192.77 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-59.47** (-5.81%) | 2026-11-25 |
-| **MRVL** | 70 | $130.24 | $129.31 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-65.10** (-0.71%) | 2026-11-25 |
-| **NESR** | 2 | $28.74 | $18.16 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-21.16** (-36.81%) | 2026-11-25 |
-| **NU** | 4 | $11.60 | $11.87 | Exit Strategy (Growth Decel / SMA break) | 🟢 **+$+1.09** (++2.34%) | 2026-11-25 |
-| **PATH** | 2 | $10.25 | $12.10 | Exit Strategy (Growth Decel / SMA break) | 🟢 **+$+3.70** (++18.05%) | 2026-11-25 |
-| **PYPL** | 1 | $56.05 | $55.82 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-0.23** (-0.41%) | 2026-11-25 |
+| **AVGO** | 11 | $285.30 | $283.27 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-22.30** (-0.71%) | 2026-11-26 |
+| **BLBD** | 10 | $61.73 | $54.52 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-72.10** (-11.68%) | 2026-11-26 |
+| **CELH** | 1 | $29.71 | $28.43 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-1.28** (-4.32%) | 2026-11-26 |
+| **CPRI** | 30 | $13.78 | $18.05 | Tier 1: Profit Lock (Up 30-50%) | 🟢 **+$+128.10** (++30.99%) | 2026-11-26 |
+| **GDS** | 1 | $32.77 | $12.42 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-20.35** (-62.10%) | 2026-11-26 |
+| **LRCX** | 3 | $204.66 | $172.94 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-95.17** (-15.50%) | 2026-11-26 |
+| **MRVL** | 77 | $118.39 | $119.75 | Exit Strategy (Growth Decel / SMA break) | 🟢 **+$+104.72** (++1.15%) | 2026-11-26 |
+| **NESR** | 2 | $28.74 | $18.35 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-20.78** (-36.15%) | 2026-11-26 |
+| **NU** | 2 | $11.60 | $12.04 | Exit Strategy (Growth Decel / SMA break) | 🟢 **+$+0.88** (++3.81%) | 2026-11-26 |
+| **ON** | 56 | $58.74 | $58.20 | Exit Strategy (Growth Decel / SMA break) | 🔴 **$-30.17** (-0.92%) | 2026-11-26 |
 
