@@ -1,6 +1,6 @@
 ---
 title: "BadOmen Algorithmic Portfolio Performance & PnL Report"
-pubDatetime: 2026-11-25T06:05:12.475612+08:00
+pubDatetime: 2026-11-26T00:00:14.315869+08:00
 description: "Live performance metrics, active holdings, and historic equity curve for the BadOmen automated paper trading portfolio."
 featured: true
 draft: false
@@ -16,11 +16,11 @@ Welcome to the live performance dashboard for **BadOmen**, our automated algorit
 ## 📊 Portfolio Summary
 | Performance Metric | Value | description |
 | :--- | :--- | :--- |
-| **Net Portfolio Equity** | **$97,746.63** | Total current liquidation value of cash and stock holdings |
-| **Total Unrealized P&L** | 🟢 **+$263.63** (+0.27%) | Total return of current open holdings |
-| **Cash Balance** | $87,344.42 | Idle reserve currency available for limit orders |
-| **Buying Power** | $369,001.96 | Margin-backed buying power for entry allocations |
-| **Report Updated** | `2026-11-25 06:05:12 (SGT)` | Timestamp of daily execution and sync run |
+| **Net Portfolio Equity** | **$97,348.96** | Total current liquidation value of cash and stock holdings |
+| **Total Unrealized P&L** | 🔴 **$-132.31** (-0.14%) | Total return of current open holdings |
+| **Cash Balance** | $74,938.26 | Idle reserve currency available for limit orders |
+| **Buying Power** | $356,176.36 | Margin-backed buying power for entry allocations |
+| **Report Updated** | `2026-11-26 00:00:14 (SGT)` | Timestamp of daily execution and sync run |
 
 ## 📈 Net Equity Growth Curve
 The chart below illustrates the historical performance of the account starting from our baseline capital funding of $100,000.00.
@@ -35,19 +35,22 @@ The chart below illustrates the exposure of our currently held active positions 
 ## 💼 Current Position Holdings
 | Ticker | Industry | Shares Owned | Average Entry Cost | Current Price | Unrealized P&L | Return (%) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $178.97 | 🔴 $-47.69 | -5.06% |
-| **BLBD** | Farm & Heavy Construction Machinery | 31 | $61.73 | $56.49 | 🔴 $-162.44 | -8.49% |
-| **CELH** | Beverages - Non-Alcoholic | 5 | $29.71 | $28.46 | 🔴 $-6.26 | -4.22% |
-| **CPRI** | Luxury Goods | 92 | $13.78 | $17.99 | 🟢 +$387.32 | +30.55% |
-| **GDS** | Information Technology Services | 5 | $32.77 | $13.85 | 🔴 $-94.60 | -57.74% |
-| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $97.99 | 🟢 +$194.28 | +19.79% |
-| **LRCX** | Semiconductor Equipment & Materials | 10 | $204.67 | $195.81 | 🔴 $-88.52 | -4.32% |
-| **NESR** | Oil & Gas Equipment & Services | 6 | $28.74 | $18.38 | 🔴 $-62.16 | -36.05% |
-| **NU** | Banks - Regional | 8 | $11.60 | $11.89 | 🟢 +$2.33 | +2.51% |
-| **PATH** | Software - Infrastructure | 6 | $10.25 | $11.96 | 🟢 +$10.26 | +16.68% |
-| **PYPL** | Credit Services | 3 | $56.05 | $56.07 | 🟢 +$0.07 | +0.04% |
-| **SMCI** | Computer Hardware | 4 | $29.25 | $22.68 | 🔴 $-26.28 | -22.46% |
-| **WEN** | Restaurants | 257 | $8.02 | $8.64 | 🟢 +$157.33 | +7.63% |
+| **AN** | Auto & Truck Dealerships | 5 | $188.51 | $180.28 | 🔴 $-41.16 | -4.37% |
+| **AVGO** | Semiconductors | 11 | $285.30 | $283.19 | 🔴 $-23.18 | -0.74% |
+| **BLBD** | Farm & Heavy Construction Machinery | 31 | $61.73 | $54.92 | 🔴 $-210.96 | -11.02% |
+| **CELH** | Beverages - Non-Alcoholic | 5 | $29.71 | $28.03 | 🔴 $-8.41 | -5.66% |
+| **CPRI** | Luxury Goods | 92 | $13.78 | $17.97 | 🟢 +$385.48 | +30.41% |
+| **GDS** | Information Technology Services | 5 | $32.77 | $12.24 | 🔴 $-102.65 | -62.65% |
+| **ITRI** | Scientific & Technical Instruments | 12 | $81.80 | $97.98 | 🟢 +$194.16 | +19.78% |
+| **LRCX** | Semiconductor Equipment & Materials | 10 | $204.67 | $173.79 | 🔴 $-308.78 | -15.09% |
+| **MRVL** | Semiconductors | 49 | $122.01 | $120.27 | 🔴 $-85.03 | -1.42% |
+| **NESR** | Oil & Gas Equipment & Services | 6 | $28.74 | $18.34 | 🔴 $-62.40 | -36.19% |
+| **NU** | Banks - Regional | 8 | $11.60 | $11.76 | 🟢 +$1.29 | +1.39% |
+| **ON** | Semiconductors | 56 | $58.74 | $57.95 | 🔴 $-44.17 | -1.34% |
+| **PATH** | Software - Infrastructure | 6 | $10.25 | $11.85 | 🟢 +$9.60 | +15.61% |
+| **PYPL** | Credit Services | 3 | $56.05 | $55.83 | 🔴 $-0.66 | -0.39% |
+| **SMCI** | Computer Hardware | 4 | $29.25 | $21.48 | 🔴 $-31.08 | -26.56% |
+| **WEN** | Restaurants | 257 | $8.02 | $8.79 | 🟢 +$195.65 | +9.49% |
 
 ## 🔴 Recent Realized Trades
 | Ticker | Shares Sold | Entry Price | Exit Price | Strategy Trigger | Realized Return | Exit Date |
